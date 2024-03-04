@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&display=swap');
+.container{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: lightgreen;
+border-radius: 100px;
+}
+.container h{
+    font-family: "Open Sans", sans-serif;
+    font-size: 80px;
+    display: block;
+    text-align: center;
+    background-color: lightgreen;
+}
+.p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
+    display: block;
+    text-align: center;
+    background-color: lightsalmon;
+    border-radius: 100px;
+    }
+    .container:hover{
+    opacity: 0%;
+    transition: 1s;
+    font-size: 80px;
+    color: red;
+    }
+    .p:hover{
+        opacity: 0%;
+        transition: 1s;
+        font-size: 50px;
+        }
+    
