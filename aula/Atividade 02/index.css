@@ -1,8 +1,14 @@
-body {
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container1{
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url('https://img.freepik.com/fotos-premium/um-interior-de-ginasio-escuro-adornado-com-halteres-pretos_60438-2852.jpg?w=996&#39');
+    margin: none;
+    padding: none;
+    background-image: url('https://img.freepik.com/fotos-premium/uma-montanha-no-ceu-com-nuvens-e-um-ceu-escuro_882049-82.jpg?w=900');
+    background-size: cover;
+    background-image: linear-gradient();
     color: #FFFFF0;
     display: flex;
     align-items: center;
@@ -43,7 +49,6 @@ header p {
     text-align: center;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
@@ -84,4 +89,39 @@ img {
     width: 100%; /* A imagem ocupará toda a largura do contêiner */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+.color  {
+    border-radius: 10px;
+    margin: 0px 30px 0px 30px;
+    padding: 10px 10px 10px 10px;
+
+}
+.color-black{
+    background-image: linear-gradient(rgb(36, 36, 36), rgb(73, 73, 73), rgb(36, 36, 36));
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+#boldline{
+    background-color: rgb(83, 83, 83);
+    border: none;
+    padding: 2px;
+}
+.head{
+    display: inline-block;
+    background-color: rgb(61, 61, 61);
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin: 0px;
+}
+.head p{
+    margin: 0px;
+}
+.head:hover{
+    padding: 10px 0px 10px 0px;
+    transition: 1s;
 }

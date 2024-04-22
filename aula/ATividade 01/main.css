@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&display=swap');
-
+body{
+    background-color: rgb(61, 61, 61);
+}
 .container{
 display: flex;
 align-items: center;
@@ -22,25 +24,29 @@ border-radius: 100px;
     background-color: lightsalmon;
     border-radius: 100px;
     }
-    .container:hover{
-    opacity: 0%;
+.container:hover{
+transition: 1s;
+font-size: 50px;
+color: rgb(0, 0, 0);
+}
+.p:hover{
+transition: 1s;
+font-size: 50px;
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
     transition: 1s;
-    font-size: 80px;
-    color: red;
-    }
-    .p:hover{
-        opacity: 0%;
-        transition: 1s;
-        font-size: 50px;
-     }
-     .img{
-       text-align: center;
-     }
-    .img img{
-border-radius: 1000px;
-    }
-    .img img:hover{
-width: 100%;
-transition: 0.5s;
-width: 100%;
-    }
+}
+img:hover{
+    width: 600px;
+    height: 700px;
+    transition: 1s;
+
+}
