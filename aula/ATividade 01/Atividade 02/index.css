@@ -1,0 +1,87 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://img.freepik.com/fotos-premium/um-interior-de-ginasio-escuro-adornado-com-halteres-pretos_60438-2852.jpg?w=996&#39');
+    color: #FFFFF0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Sobreposição escura */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999; /* Para garantir que o cabeçalho fique acima do conteúdo */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0 0; /* Ajuste a margem do parágrafo */
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0); /* Sobreposição escura */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.5em; /* Reduzi o tamanho do título */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em; /* Reduzi o tamanho do texto */
+    margin-bottom: 20px; /* Ajustei a margem inferior */
+}
+
+.cta-button {
+    padding: 15px 30px;
+    font-size: 1em; /* Reduzi o tamanho do botão */
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #FFFFF0;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #FFFFF0;
+    color: #000000;
+    transform: scale(1.05);
+}
+
+.tela-escondida {
+    display: none;
+}
+
+img {
+    width: 100%; /* A imagem ocupará toda a largura do contêiner */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
