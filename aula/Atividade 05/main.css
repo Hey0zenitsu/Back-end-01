@@ -1,0 +1,73 @@
+/* Define a fonte principal e reseta as margens e preenchimentos */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background-color: #f5f5f5; /* Define uma cor de fundo para o corpo */
+}
+
+/* Estilo para o título principal */
+h1 {
+text-align: center; /* Centraliza o texto */
+color: #333; /* Define a cor do texto */
+margin-top: 20px; /* Adiciona espaço acima do título */
+}
+
+/* Estilo para o formulário */
+form {
+max-width: 400px; /* Define a largura máxima do formulário */
+margin: 0 auto; /* Centraliza o formulário na página */
+background-color: #fff; /* Define um fundo branco para o formulário */
+padding: 20px; /* Adiciona espaçamento interno ao redor do formulário */
+border-radius: 8px; /* Adiciona borda arredondada ao formulário */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave ao formulário */
+
+}
+
+/* Estilo para rótulos de campo */
+label {
+display: block; /* Faz com que os rótulos ocupem toda a largura do contêiner */
+margin-bottom: 10px; /* Adiciona espaço abaixo de cada rótulo */
+color: #555; /* Define a cor do texto do rótulo */
+}
+
+/* Estilo para campos de entrada */
+input {
+width: calc(100% - 16px); /* Define a largura dos campos de entrada, considerando o
+preenchimento */
+padding: 10px; /* Adiciona preenchimento interno aos campos de entrada */
+margin-bottom: 20px; /* Adiciona espaço abaixo de cada campo de entrada */
+box-sizing: border-box; /* Faz com que o preenchimento e a borda sejam incluídos na
+largura total */
+border: 1px solid #ccc; /* Adiciona uma borda cinza aos campos de entrada */
+border-radius: 4px; /* Adiciona uma borda arredondada aos campos de entrada */
+}
+
+/* Estilo para botões */
+button {
+width: 100%; /* Faz com que os botões ocupem toda a largura do contêiner */
+padding: 12px; /* Adiciona preenchimento interno aos botões */
+background-color: #007bff; /* Define a cor de fundo do botão */
+color: #fff; /* Define a cor do texto do botão */
+border: none; /* Remove a borda do botão */
+border-radius: 4px; /* Adiciona uma borda arredondada ao botão */
+cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+transition: background-color 0.3s ease; /* Adiciona uma transição suave para a cor de
+fundo */
+
+}
+
+/* Estilo para o hover do botão */
+button:hover {
+background-color: #0056b3; /* Altera a cor de fundo ao passar o mouse sobre o botão */
+}
+
+/* Estilo para a seção de informações do personagem */
+#characterInfo {
+margin-top: 30px; /* Adiciona espaço acima da seção de informações do personagem */
+border: 1px solid #ccc; /* Adiciona uma borda cinza à seção */
+padding: 15px; /* Adiciona espaçamento interno à seção */
+border-radius: 8px; /* Adiciona borda arredondada à seção */
+background-color: #fff; /* Define um fundo branco para a seção */
+}

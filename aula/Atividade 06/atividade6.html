@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Atividade 6</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+    }
+    body{
+        background-image: url('https://img.freepik.com/fotos-premium/uma-paisagem-escura-com-montanhas-e-um-rio-em-primeiro-plano_677426-165.jpg');
+        background-size: cover;
+    }
+    .corpo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        margin: 300px 0px 100px 0px;
+        color: white;
+    }
+    .texto{
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 50px 30px 0px 30px;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(58, 58, 58);
+        border-radius: 10px;
+        border: 5px solid rgb(51, 51, 51);
+    }
+    .texto h1{
+        padding: 5px;
+    }
+    .texto a{
+        color: green;
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .btn{
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(54, 54, 54);
+        padding: 10px;
+        margin-bottom: 30px;
+        }
+    .btn a{
+        text-decoration: none;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 7px;
+    }
+    .btn a:hover{
+     background-color: rgb(90, 90, 90);
+     padding: 10px;
+     transition: 0.5s;
+    }
+    .btn p{
+        font-size: 17px;
+    }
+</style>
+<body>
+    <div class="btn">
+        <nav>
+            <a href="../Atividade 05/atividade5.html" id="left">Atividade Anterior</a>
+            <a href="../Atividade 06/atividade6.html" id="right">Próxima Atividade</a>
+        </nav>
+        
+    </div>
+    <div class="container" id="main-container">
+        <h1>Crossfit para todos!</h1>
+        <button class="cta-button" onclick="mostrarSegundaTela()">Clique e saiba mais</button>
+    </div>
+
+    <div class="container tela-escondida" id="segunda-tela">
+        <h1>Todos são Bem-Vindos: CrossFit para Todas as Idades e Habilidades!</h1>
+        <p>CrossFit não é apenas um treino, é uma jornada para descobrir do que você é realmente capaz. Este método desafia seus limites, fortalece seu corpo e transforma sua mentalidade. O CrossFit é acessível a todos, independentemente de idade ou nível de condicionamento físico. Então, vista sua camiseta, amarre os tênis e junte-se à comunidade CrossFit para superar obstáculos, alcançar metas e se tornar a melhor versão de si mesmo!</p>
+
+      <p>Confira abaixo como o CrossFit é verdadeiramente para todas as idades, promovendo um ambiente inclusivo e acolhedor para todos os participantes!</p>
+        <ul>
+            <li>É praticado por uma ampla gama de pessoas, desde iniciantes até atletas experientes</li>
+            <li>Todos são incentivados a participar, independentemente de sua forma física atual</li>
+            <li>Oferece uma variedade de benefícios para a saúde, incluindo aumento da força, resistência, flexibilidade e saúde cardiovascular, independentemente da idade ou habilidade física</li>
+            <li>Participar do CrossFit pode ajudar as pessoas a superar desafios pessoais, desenvolver confiança e alcançar metas de condicionamento físico, independentemente de sua idade ou habilidade inicial</li>
+        </ul>
+      <p>O CrossFit não é apenas para os "fortões". Hoje em dia, é um esporte diversificado que atrai pessoas de todas as idades e níveis de condicionamento físico.</p>
+        <button class="cta-button" onclick="voltarParaPrimeiraTela()">Voltar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

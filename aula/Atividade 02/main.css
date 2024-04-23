@@ -1,0 +1,20 @@
+/* Estilo para a imagem */
+.imagem-container {
+    width: 100%;
+    max-width: 500px; /* Ajuste conforme necessário */
+    margin: 0 auto; /* Centraliza a imagem */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imagem {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 100px 0px 100px 0px;
+    padding: 20px;
+    background-color: rgb(167, 167, 167);
+    border-radius: 10px;
+}
