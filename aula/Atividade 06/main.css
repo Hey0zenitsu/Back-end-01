@@ -1,71 +1,57 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-    color: #FFFFF0;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&display=swap');
+.container{
+    width: 100%;
 }
-.overlay {
-    background-color: rgba(0, 0, 0, 0); /* Sobreposição escura */
+.inicial {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto; /* ou defina uma altura fixa */
+    font-family: 'open sans';
+   
+}
+.inicial img{
+    width: 100%;
+    height: 100%;
+}
+.gradient-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    background-image: linear-gradient(to right, black, transparent,transparent);
+    z-index: 1;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.white-board{
+    background-color: rgb(211, 43, 40);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+.white-board img{
+width: 100%;
+margin: none;
+}
+.white-board h1{
+    color: rgb(181, 181, 181);
+    font-family: 'open sans';
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 250px;
+}
+#card{  
+    width: 30%;
+    margin: 5px;
+    margin-top: 30px;
 }
 
-#main-container {
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    margin-top: 200px;
-}
-
-h1 {
-    font-size: 2.5em; /* Reduzi o tamanho do título */
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 1.2em; /* Reduzi o tamanho do texto */
-    margin-bottom: 20px; /* Ajustei a margem inferior */
-}
-
-.cta-button {
-    padding: 15px 30px;
-    font-size: 1em; /* Reduzi o tamanho do botão */
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    background-color: #FFFFF0;
-    color: #000000;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-}
-
-.cta-button:hover {
-    background-color: #FFFFF0;
-    color: #000000;
-    transform: scale(1.05);
-}
-
-.tela-escondida {
-    display: none;
-    text-align: center;
-    background-color: rgb(66, 66, 66);
-    margin: 10px;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-img {
-    width: 100%; /* A imagem ocupará toda a largura do contêiner */
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+#card img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
