@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>*{
+        margin: 0px;
+    }
+    .nav{
+        background-color: rgb(44, 44, 44);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        color: rgb(163, 163, 163);
+    }
+    .direita{
+        display: flex;
+        margin: 5px;
+        font-family: 'roboto';
+    }
+    .direita input{
+        margin: 0px 0px 0px 10px;
+        border: none;
+        background-color: rgb(172, 172, 172);
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .esquerda{
+        margin: 5px;
+    }
+    .esquerda a{
+        text-decoration: none;
+        font-family: 'roboto';
+        padding: 15px;
+        color: rgb(163, 163, 163);
+    }
+    .esquerda a:hover{
+        background-color: rgb(56, 56, 56);
+    }
+    .pag{
+        background-color: rgb(65, 65, 65);
+        font-family: 'roboto';
+        color: rgb(179, 179, 179);
+    }
+    .pag p {
+        margin: 10px;
+    }
+    .row{
+        display: flex;
+        flex-direction: row;
+        margin: 5px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .row img{
+        width: 200px;
+        height: 300px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: 0.4s;
+    }
+    .row img:hover{
+        width: 210px;
+        height: 310px;
+        transition: 0.4s;
+    }
+    .pag h1{
+        padding: 15px;
+        font-family: 'roboto';
+    }
+    .pag{
+        padding: 10px;
+    }
+    .card{
+        margin: 10px;
+    }
+    .lista{
+        height: 1000px;
+        display: none;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px;
+        background-color: rgb(68, 68, 68);
+        color: rgb(163, 163, 163);
+        font-family: 'roboto';    
+        flex-wrap: wrap;
+    }
+    .lobby{
+        display: flex;
+        flex-direction: column; 
+        transition: 0.5s;
+        align-items: center;
+        margin: 20px;
+    }
+    .lobby:hover{
+        background-color: rgb(83, 83, 83);
+        padding: 20px;
+        transition: 0.5s;
+    }
+    .lobby img:hover{
+        width: auto;
+    }
+    .lobby a{
+        text-decoration: none;
+        color: rgb(163, 163, 163);
+        margin-top: 5px;
+        margin-left: 10px;
+        transition: 0.5s;
+
+    }
+    .lobby a:hover{
+        color: rgb(231, 231, 231);
+        transition: 0.5s;
+        background-color: rgb(71, 71, 71);
+        padding: 1px; 
+        border-radius: 3px;  
+    }
+    .lobby p{
+        margin-top: 5px;
+        margin-left: 10px;
+        transition: 1s;
+
+    }
+    .lobby p:hover{
+        color: rgb(231, 231, 231);
+        transition: 1s;
+        background-color: rgb(71, 71, 71);
+        padding: 3px;
+    }
+    p img{
+        display: block;
+        width: 0px;
+        height: 0px;
+        transition: 0.5s;
+        border-radius: 5px;  
+    }
+    #sin{
+        font-family: 'roboto';
+        font-size: 0;
+        color: rgb(170, 170, 170);
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    ::-webkit-scrollbar{
+        background-color: rgb(189, 189, 189);
+        width: 10px;
+        padding: 10px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: gray;
+        border-radius: 10px;
+        width: 2px;
+    }
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .nav{
+        background-color: rgb(44, 44, 44);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        color: rgb(163, 163, 163);
+    }
+    .direita{
+        display: flex;
+        margin: 5px;
+        font-family: 'roboto';
+    }
+    .direita input{
+        margin: 0px 0px 0px 10px;
+        border: none;
+        background-color: rgb(172, 172, 172);
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .esquerda{
+        margin: 5px;
+    }
+    .esquerda a{
+        text-decoration: none;
+        font-family: 'roboto';
+        padding: 15px;
+        color: rgb(163, 163, 163);
+    }
+    .esquerda a:hover{
+        background-color: rgb(56, 56, 56);
+    }
+    .pag{
+        background-color: rgb(65, 65, 65);
+        font-family: 'roboto';
+        color: rgb(179, 179, 179);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0px 500px 0px;
+    }
+    .pag iframe{
+        margin: 30px 0px 0px 0px;
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar{
+        background-color: rgb(189, 189, 189);
+        width: 10px;
+        padding: 10px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: gray;
+        border-radius: 10px;
+        width: 2px;
+    }
+    .lista{
+        height: 1000px;
+        display: none;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px;
+        background-color: rgb(68, 68, 68);
+        color: rgb(163, 163, 163);
+        font-family: 'roboto';    
+        flex-wrap: wrap;
+    }
+    .lobby{
+        display: flex;
+        flex-direction: column; 
+        transition: 0.5s;
+        align-items: center;
+        margin: 20px;
+    }
+    .lobby:hover{
+        background-color: rgb(83, 83, 83);
+        padding: 20px;
+        transition: 0.5s;
+    }
+    .lobby img:hover{
+        width: auto;
+    }
+    .lobby a{
+        text-decoration: none;
+        color: rgb(163, 163, 163);
+        margin-top: 5px;
+        margin-left: 10px;
+        transition: 0.5s;
+
+    }
+    .lobby a:hover{
+        color: rgb(231, 231, 231);
+        transition: 0.5s;
+        background-color: rgb(71, 71, 71);
+        padding: 1px; 
+        border-radius: 3px;  
+    }
+    .lobby p{
+        margin-top: 5px;
+        margin-left: 10px;
+        transition: 1s;
+
+    }
+    .lobby p:hover{
+        color: rgb(231, 231, 231);
+        transition: 1s;
+        background-color: rgb(71, 71, 71);
+        padding: 3px;
+    }
+    p img{
+        display: block;
+        width: 0px;
+        height: 0px;
+        transition: 0.5s;
+        border-radius: 5px;  
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="esquerda">
+                <a href="">Perfil</a>
+                <a href="Html.html">home</a>
+            </div>
+            <div class="direita">
+                <p onclick="trocalobby()">Pesquisar: </p>
+                <input type="text">
+            </div>
+            <div class="lista" id="lobby">
+                <div class="lobby">
+                    <h1>Tipos de filme:</h1>
+                <a href="#acao">Ação</a>
+            <a href="#comedia">Comédia</a>
+            <a href="#drama">Drama</a>
+            <a href="#ficcao">Ficção Científica</a>
+            <a href="#terror">Terror</a>
+            <a href="#romance">Romance</a>
+            <a href="#animacao">Animação</a>
+            <a href="#documentario">Documentário</a> 
+            </div> 
+            <div class="lobby">
+                <h1>Últimas Adições:</h1>
+                <a href="Filme1.html"><p>Oppenheimer - (2023)</p></a>
+                <a href="Filme2.html"><p>Barbie - (2023)</p></a>
+                <a href="Filme4.html"><p>Killers of the Flower Moon - (2023)</p></a>
+                <a href="Filme3.html"><p>Duna: Parte Dois - (2024) </p></a>
+                <a href="Filme5.html"><p>Mission: Impossible – Dead Reckoning Part One - (2023) </p></a>
+            </div>
+            <div class="lobby">
+                <h1>Em Destaque:</h1>
+                <p onclick="aparecer1()">O Poderoso Chefão - (The Godfather, 1972)
+                   <a href="Filme6.html"> <img src="./img/download-new.jpg" alt="" id="1"onclick="aparecer1()"></a>
+                </p>
+                <p onclick="aparecer2()">Cidadão Kane - (Citizen Kane, 1941)
+                    <a href="Filme7.html"><img src="https://institutodecinema.com.br/img/curiosidades_cidadao_kane.jpg" alt=""id="2"onclick="aparecer2()"></a>
+                </p>
+                <p onclick="aparecer3()">Titanic - (1997)
+                    <a href="Filme8.html"><img src="https://www.acidadeon.com/tudoep/wp-content/uploads/sites/10/2023/12/perturbador_titanic_1200x675_12062023121119.jpg" alt="" id="3" onclick="aparecer3()"></a>
+                </p>
+                <p onclick="aparecer4()">Avatar - (2009)
+                    <a href="Filme9.html"><img src="data:image/jpeg;base64,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" alt="" id="4" onclick="aparecer4()"></a>
+                </p>
+                <p onclick="aparecer5()">Vingadores: Ultimato -  (Avengers: Endgame, 2019)
+                    <a href="Filme10.html"><img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/66D8BB10CAF60D83CF4C046E8275561A7FD66BC220A06DF413AF54C942B323DD/scale?width=1200&amp;aspectRatio=1.78&amp;format=webp" alt="" id="5" onclick="aparecer5()"></a> </p>
+            </div> 
+            </div> 
+            </div>
+        </div>
+    <div class="pag" id="page">
+        <iframe name=Player "" src="//%E3%83%87-%E3%83%B3-%E3%83%83-%E3%82%AF-%E3%82%B9-%E3%83%B3-%E3%83%87-%E3%83%89-%E3%83%89-%E3%83%AB-%E3%83%9C-%E3%83%A9-%E3%83%AB%E3%82%B0%E3%83%AC%E3%83%95%E3%83%88-%E3%83%96%E3%83%A0%E3%83%95%E3%82%AF%E3%83%88%E3%83%97%E3%83%89%E3%83%A9%E3%82%A2.%E3%82%B8-1l1-%E3%82%B0.%E3%83%83-22-%E3%82%AF-11-%E3%82%B9-33-%E3%83%AB-99-%E3%83%97-75-%E3%82%BE--%E3%82%A8--%E3%83%96--%E3%82%B9-%E3%83%83.%E3%82%AF.%E3%82%B9.%E3%82%BA.%E3%82%AF.%E3%82%B8.%E3%82%B7%E3%82%B0%E3%83%8A%E3%83%AB%E3%83%91%E3%83%96%E3%83%AA%E3%82%B3-%E5%85%AC%E5%85%B1%E3%81%AE%E6%A8%99%E8%AD%98-%E3%83%90%E3%83%AC%E3%82%A6%E3%83%89%E3%83%83%E3%83%88%E3%82%B0%E3%82%A6%E3%82%AF%E3%83%88%E3%83%83%E3%83%88%E3%82%BA%E3%83%92.%E3%82%BB%E3%83%BC%E3%83%AB/player3/serverfhlb.php?vid=TITANC" frameborder=0 height=400 scrolling=no width=640 allow="encrypted-media" allowFullScreen> </iframe>
+    </div>
+</body>
+<script>
+    let img1 = document.getElementById('1')
+    let img2 = document.getElementById('2')
+    let img3 = document.getElementById('3')
+    let img4 = document.getElementById('4')
+    let img5 = document.getElementById('5')
+    let sin = document.getElementById('sin')
+    let um = 1;
+    let s = true
+    let lobbye = document.getElementById('lobby');
+    let pag = document.getElementById('page');
+    let lobby = false;
+    function trocalobby(){
+        if (s == true){
+            lobbye.style.display = 'flex';
+            page.style.display = 'none';
+            
+            s = !s
+            console.log(s)
+         }
+         else if(s == false)
+         {
+            lobbye.style.display = 'none';
+            page.style.display = 'block';
+            s = !s
+            console.log(s)
+         } }
+    function aparecer1(){
+        if (um == 1){
+        img1.style.width = "320px"
+        img1.style.height = "200px" 
+        img1.style.margin = "10px"
+        um -= 1
+    }
+        else if(um == 0){
+        img1.style.width = "0px"
+        img1.style.height = "0px"
+        img1.style.margin = "0px"
+        um += 1
+    } }
+    function aparecer2(){
+        if (um == 1){
+        img2.style.width = "320px"
+        img2.style.height = "200px" 
+        img2.style.margin = "10px"
+
+        um -= 1
+    }
+        else if(um == 0){
+        img2.style.width = "0px"
+        img2.style.height = "0px"
+        img2.style.margin = "0px"
+        um += 1
+    } }
+    function aparecer3(){
+        if (um == 1){
+        img3.style.width = "320px"
+        img3.style.height = "200px" 
+        img3.style.margin = "10px"
+        um -= 1
+    }
+        else if(um == 0){
+        img3.style.width = "0px"
+        img3.style.height = "0px"
+        img3.style.margin = "0px"
+        um += 1
+    } }
+    function aparecer4(){
+        if (um == 1){
+        img4.style.width = "320px"
+        img4.style.height = "200px" 
+        img4.style.margin = "10px"
+        um -= 1
+    }
+        else if(um == 0){
+        img4.style.width = "0px"
+        img4.style.height = "0px"
+        img4.style.margin = "0px"
+        um += 1
+    } }function aparecer5(){
+        if (um == 1){
+        img5.style.width = "320px"
+        img5.style.height = "200px"
+        img5.style.margin = "10px"
+        um -= 1
+    }else if(um == 0){
+        img5.style.width = "0px"
+        img5.style.height = "0px"
+        img5.style.margin = "0px"
+
+        um += 1
+    } }
+</script>
+</html>

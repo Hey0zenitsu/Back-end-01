@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .nav{
+        background-color: rgb(44, 44, 44);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        color: rgb(163, 163, 163);
+    }
+    .direita{
+        display: flex;
+        margin: 5px;
+        font-family: 'roboto';
+    }
+    .direita input{
+        margin: 0px 0px 0px 10px;
+        border: none;
+        background-color: rgb(172, 172, 172);
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .esquerda{
+        margin: 5px;
+    }
+    .esquerda a{
+        text-decoration: none;
+        font-family: 'roboto';
+        padding: 15px;
+        color: rgb(163, 163, 163);
+    }
+    .esquerda a:hover{
+        background-color: rgb(56, 56, 56);
+    }
+    .pag{
+        background-color: rgb(65, 65, 65);
+        font-family: 'roboto';
+        color: rgb(179, 179, 179);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0px 500px 0px;
+    }
+    .pag iframe{
+        margin: 30px 0px 0px 0px;
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar{
+        background-color: rgb(189, 189, 189);
+        width: 10px;
+        padding: 10px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: gray;
+        border-radius: 10px;
+        width: 2px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="esquerda">
+                <a href="">Perfil</a>
+                <a href="Html.html">home</a>
+            </div>
+            <div class="direita">
+                <p onclick="trocalobby()">Pesquisar: </p>
+                <input type="text">
+            </div>
+        </div>
+    <div class="pag" id="page">
+        <iframe name=Player "" src="//%E3%83%87-%E3%83%B3-%E3%83%83-%E3%82%AF-%E3%82%B9-%E3%83%B3-%E3%83%87-%E3%83%89-%E3%83%89-%E3%83%AB-%E3%83%9C-%E3%83%A9-%E3%83%AB%E3%82%B0%E3%83%AC%E3%83%95%E3%83%88-%E3%83%96%E3%83%A0%E3%83%95%E3%82%AF%E3%83%88%E3%83%97%E3%83%89%E3%83%A9%E3%82%A2.%E3%82%B8-1l1-%E3%82%B0.%E3%83%83-22-%E3%82%AF-11-%E3%82%B9-33-%E3%83%AB-99-%E3%83%97-75-%E3%82%BE--%E3%82%A8--%E3%83%96--%E3%82%B9-%E3%83%83.%E3%82%AF.%E3%82%B9.%E3%82%BA.%E3%82%AF.%E3%82%B8.%E3%82%B7%E3%82%B0%E3%83%8A%E3%83%AB%E3%83%91%E3%83%96%E3%83%AA%E3%82%B3-%E5%85%AC%E5%85%B1%E3%81%AE%E6%A8%99%E8%AD%98-%E3%83%90%E3%83%AC%E3%82%A6%E3%83%89%E3%83%83%E3%83%88%E3%82%B0%E3%82%A6%E3%82%AF%E3%83%88%E3%83%83%E3%83%88%E3%82%BA%E3%83%92.%E3%82%BB%E3%83%BC%E3%83%AB/player3/serverf4hlb.php?vid=MSAOIMPSVELACRTDCNTSPT1" frameborder=0 height=400 scrolling=no width=640 allow="encrypted-media" allowFullScreen> </iframe>
+    </div>
+</body>
+</html>
